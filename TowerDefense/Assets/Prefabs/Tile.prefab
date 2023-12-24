@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 630440287437951235}
-  - component: {fileID: 7314948601253032068}
   - component: {fileID: 45581850152650792}
+  - component: {fileID: 7314948601253032068}
   m_Layer: 0
   m_Name: Tile
   m_TagString: Untagged
@@ -35,21 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7314948601253032068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6514617038428491353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb79030ca94234c3db45820daaa6d4bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4746611219092287790, guid: 4c4dce452b1e14f93952089a7015dcd4,
-    type: 3}
-  isPlaceable: 1
 --- !u!65 &45581850152650792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71,6 +56,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.117211856, z: 1}
   m_Center: {x: 0, y: -0.017598396, z: 0}
+--- !u!114 &7314948601253032068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514617038428491353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb79030ca94234c3db45820daaa6d4bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerPrefab: {fileID: -7797985463810016773, guid: 4c4dce452b1e14f93952089a7015dcd4,
+    type: 3}
+  isPlaceable: 1
 --- !u!1 &8335259383392090562
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8726025405129066409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
@@ -362,3 +362,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e581556cf3faf4bae9044dc9d5173724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  blockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}

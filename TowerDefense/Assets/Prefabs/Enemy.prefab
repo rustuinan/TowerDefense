@@ -648,9 +648,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4221548819908793208}
-  - component: {fileID: 3209554877338932518}
   - component: {fileID: 4762002752447241912}
+  - component: {fileID: 3209554877338932518}
   - component: {fileID: 2145429584892223956}
+  - component: {fileID: -3529145919024265751}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -674,27 +675,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3209554877338932518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4501225672015620336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc72d3a37af34b4d97652df94a30954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 1
 --- !u!65 &4762002752447241912
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -716,6 +696,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.49501148, y: 1.7959522, z: 0.39071798}
   m_Center: {x: -0.0026031255, y: 0.9394068, z: -0.037985753}
+--- !u!114 &3209554877338932518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501225672015620336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfc72d3a37af34b4d97652df94a30954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  path:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  speed: 1
 --- !u!114 &2145429584892223956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +730,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 5
+  difficultyRamp: 1
+--- !u!114 &-3529145919024265751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4501225672015620336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785b5ae4cf75b465586bc8fe00ab6240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldReward: 25
+  goldPenalty: 25
 --- !u!1 &4570946111928591150
 GameObject:
   m_ObjectHideFlags: 0
